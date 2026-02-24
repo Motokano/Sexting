@@ -1,7 +1,0 @@
-{
-  "startScene": "home",
-  "sys_acts": [
-    { "label": "检查身体", "cmd": [{ "type": "log", "val": "你审视全身，试图感知体温与呼吸。" }] },
-    { "label": "整理行囊", "cmd": [{ "type": "log", "val": "行囊空空，只有几件换洗衣服。" }] }
-  ]
-}
