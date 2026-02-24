@@ -1,0 +1,41 @@
+{
+  "home": {
+    "name": "温馨小屋", "cols": 8, "desc": "这是你的避风港。",
+    "grid": [
+      {"type":"null"}, {"type":"null"}, {"type":"null"}, {"sn":"出门", "acts":[{"label":"去树林", "cmd":[{"type":"move", "target":"forest", "entry": 59}]}]}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"},
+      {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"},
+      {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"},
+      {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"},
+      {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"},
+      {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"},
+      {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"},
+      {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"object_id": "bed"}
+    ]
+  },
+  "forest": {
+    "name": "幽静树林", "cols": 8, "desc": "枯枝败叶的海洋。",
+    "grid": [
+      {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"sn":"去湖北", "acts":[{"label":"前进", "cmd":[{"type":"move", "target":"lake", "entry": 59}]}]}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"},
+      {"type":"tree", "sn":"树"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"tree", "sn":"树"},
+      {"type":"tree", "sn":"树"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"tree", "sn":"树"},
+      {"type":"tree", "sn":"树"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"tree", "sn":"树"},
+      {"type":"tree", "sn":"树"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"object_id": "campfire"}, {"type":"null"}, {"type":"null"}, {"type":"tree", "sn":"树"},
+      {"type":"tree", "sn":"树"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"tree", "sn":"树"},
+      {"type":"tree", "sn":"树"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"tree", "sn":"树"},
+      {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"sn":"回家", "acts":[{"label":"进屋", "cmd":[{"type":"move", "target":"home", "entry": 3}]}]}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}
+    ]
+  },
+  "lake": {
+    "name": "清澈湖泊", "cols": 8, "desc": "湖面平静。",
+    "grid": [
+      {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"},
+      {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"},
+      {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"},
+      {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"}, {"object_id":"water"},
+      {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"},
+      {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"},
+      {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"},
+      {"type":"null"}, {"type":"null"}, {"type":"null"}, {"sn":"回树林", "acts":[{"label":"往南走", "cmd":[{"type":"move", "target":"forest", "entry": 3}]}]}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "sensations": [
+    { "id": "head_trauma", "condition": { "limb": "head", "ratio": 0.4 }, "text": "脑袋像是被重锤击中，视线支离破碎。" },
+    { "id": "starving", "condition": { "stat": "fullness", "val": 15, "op": "lt" }, "text": "饥饿让你的肠胃绞在一起，阵阵发虚。" },
+    { "id": "healthy", "condition": "default", "text": "肢体还算听使唤，只是呼吸略显急促。" }
+  ],
+  "effects": {
+    "well_rested": { "name": "神清气爽", "desc": "充足的睡眠让你感到充满力量。", "onTick": [{ "type": "mod_stat", "key": "stamina", "val": 5 }] },
+    "burned_legs": { "name": "双腿灼伤", "desc": "火焰伤及了皮肉，行动时刺痛感阵阵。", "onTick": [{ "type": "mod_stat", "key": "stamina", "val": -2 }] }
+  }
+}
