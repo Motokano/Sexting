@@ -1,0 +1,8 @@
+{
+  "startScene": "home",
+  "startIndex": 27,
+  "sys_acts": [
+    { "label": "检查身体", "cmd": [{ "type": "call_action", "id": "action_check_self" }] },
+    { "label": "整理行囊", "cmd": [{ "type": "log", "val": "包里目前什么都没有。" }] }
+  ]
+}
