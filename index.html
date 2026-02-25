@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>残机物语 v1.4 - 数据驱动版</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-app">
+        <header id="status-bar">
+            <div id="time-display">--月--日 --:--</div>
+            <div id="loc-display">系统初始化...</div>
+        </header>
+
+        <main id="stage">
+            <div id="grid-scroll-view">
+                <div id="grid-container">
+                    <div id="scene-desc">...</div>
+                    <div id="action-grid" class="action-grid"></div>
+                </div>
+            </div>
+
+            <aside id="side-menu">
+                <div class="menu-section debug-panel">
+                    <div class="menu-title">体征监控</div>
+                    <div id="stat-monitor"></div>
+                </div>
+                <div class="menu-section">
+                    <div class="menu-title">个人动作</div>
+                    <div id="self-options"></div>
+                </div>
+                <div class="menu-section" id="context-section">
+                    <div class="menu-title">交互选项</div>
+                    <div id="context-options"></div>
+                </div>
+            </aside>
+        </main>
+
+        <div id="log-resizer"></div>
+        <footer id="log-console"><div id="log-content"></div></footer>
+    </div>
+    <script src="ui.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

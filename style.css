@@ -1,0 +1,33 @@
+:root {
+    --bg: #f5f2e9; --card: #ffffff; --btn: #fcfaf2;
+    --text: #333; --dim: #888; --accent: #8b4513; --border: #dcd7c9;
+}
+#game-app.night { --bg: #1a1a1e; --card: #25252a; --text: #aaa; filter: brightness(0.8); }
+#game-app.damage-flash { animation: flash-red 0.15s ease-out; }
+@keyframes flash-red { from { background: rgba(255,0,0,0.4); } to { background: transparent; } }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: "STSong", "SimSun", serif; height: 100vh; overflow: hidden; }
+#game-app { display: flex; flex-direction: column; height: 100vh; }
+
+#status-bar { height: 45px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; padding: 0 20px; font-weight: bold; color: var(--accent); }
+#stage { flex: 1; display: flex; overflow: hidden; }
+#grid-scroll-view { flex: 2; overflow: auto; padding: 20px; background: #e8e4d8; }
+#grid-container { background: var(--card); border-radius: 4px; border: 1px solid var(--border); padding: 15px; width: max-content; }
+
+.action-grid { display: grid; grid-template-columns: repeat(8, 64px); gap: 6px; }
+
+.btn { width: 64px; height: 64px; background: var(--btn); border: 1px solid var(--border); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 11px; }
+.btn.blocking { background: #dcd7c9 !important; color: #999; cursor: not-allowed; }
+.btn.tree { background: #e2eccd; color: #7a9e4d; }
+.btn.fire { background: #ffecb3; color: #f57c00; }
+.btn.player-token { border: 2px solid var(--accent) !important; color: var(--accent) !important; font-weight: bold; background: #fff !important; }
+
+#side-menu { flex: 1; background: var(--card); border-left: 1px solid var(--border); padding: 15px; min-width: 260px; display: flex; flex-direction: column; gap: 15px; overflow-y: auto; }
+.debug-panel { font-family: monospace; font-size: 11px; background: #fdfcf8; padding: 10px; border: 1px dashed var(--border); }
+.menu-btn { width: 100%; padding: 12px; background: var(--btn); border: 1px solid var(--border); cursor: pointer; text-align: left; margin-bottom: 5px; }
+.menu-btn.disabled { background: #eee !important; color: #bbb !important; cursor: not-allowed; }
+
+#log-console { height: 30%; background: #fff; overflow-y: auto; padding: 15px; border-top: 1px solid var(--border); }
+.log { margin-bottom: 5px; font-size: 14px; border-left: 3px solid var(--border); padding-left: 10px; }
+.hidden { display: none !important; }

@@ -1,0 +1,21 @@
+{
+  "evt_check_self": {
+    "label": "检查身体",
+    "repeatable": true,
+    "cmd": [{ "type": "check_body_text" }]
+  },
+  "evt_old_man_wisdom": {
+    "label": "恭敬请教",
+    "repeatable": false,
+    "flag": "f_old_man_wisdom",
+    "cmd": [
+      { "type": "log", "val": "老者缓缓睁眼：‘保全肢体，方有生机。’" },
+      { "type": "mod_stat", "key": "hydration", "val": 20 }
+    ]
+  },
+  "evt_bed_sleep": {
+    "label": "沉睡 (8小时)",
+    "repeatable": true,
+    "cmd": [{ "type": "call_action", "id": "action_sleep" }]
+  }
+}

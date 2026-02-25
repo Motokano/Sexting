@@ -1,0 +1,16 @@
+{
+  "action_sleep": [
+    { "type": "log", "val": "<b>你进入了睡眠...</b>" },
+    { "type": "advance_time", "val": 480 },
+    { "type": "recover_limbs_ratio", "val": 0.1 },
+    { "type": "mod_stat", "key": "fatigue", "val": -50 }
+  ],
+  "action_fire_burn": [
+    { "type": "log", "val": "<b>烫！</b> 火苗灼烧了你的小腿。" },
+    { "type": "hp_limb", "limb": "l_leg", "val": -10 },
+    { "type": "hp_limb", "limb": "r_leg", "val": -10 }
+  ],
+  "action_check_self": [
+    { "type": "check_body_text" }
+  ]
+}

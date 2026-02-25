@@ -1,0 +1,5 @@
+{
+  "startScene": "home",
+  "startIndex": 27,
+  "sys_events": ["evt_check_self"]
+}

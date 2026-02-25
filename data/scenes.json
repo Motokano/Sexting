@@ -1,0 +1,41 @@
+{
+  "home": {
+    "name": "家", "cols": 8, "desc": "简陋的避风港。",
+    "grid": [
+      {"type":"null"},{"type":"null"},{"type":"null"},{"sn":"出门","acts":[{"label":"去树林","cmd":[{"type":"move","target":"forest","entry":59}]}]},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},
+      {"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},
+      {"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},
+      {"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},
+      {"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},
+      {"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},
+      {"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},
+      {"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"object_id":"bed"}
+    ]
+  },
+  "forest": {
+    "name": "幽静树林", "cols": 8, "desc": "树影婆娑。",
+    "grid": [
+      {"type":"tree","sn":"树"},{"type":"tree","sn":"树"},{"type":"tree","sn":"树"},{"sn":"北路","acts":[{"label":"前进","cmd":[{"type":"move","target":"lake","entry":59}]}]},{"type":"tree","sn":"树"},{"type":"tree","sn":"树"},{"type":"tree","sn":"树"},{"type":"tree","sn":"树"},
+      {"type":"tree","sn":"树"},{"type":"null"},{"npc_id":"old_man"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"tree","sn":"树"},
+      {"type":"tree","sn":"树"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"tree","sn":"树"},
+      {"type":"tree","sn":"树"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"tree","sn":"树"},
+      {"type":"tree","sn":"树"},{"type":"null"},{"type":"null"},{"type":"null"},{"object_id":"campfire"},{"type":"null"},{"type":"null"},{"type":"tree","sn":"树"},
+      {"type":"tree","sn":"树"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"tree","sn":"树"},
+      {"type":"tree","sn":"树"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"tree","sn":"树"},
+      {"type":"tree","sn":"树"},{"type":"tree","sn":"树"},{"type":"tree","sn":"树"},{"sn":"南路","acts":[{"label":"回家","cmd":[{"type":"move","target":"home","entry":3}]}]},{"type":"tree","sn":"树"},{"type":"tree","sn":"树"},{"type":"tree","sn":"树"},{"type":"tree","sn":"树"}
+    ]
+  },
+  "lake": {
+    "name": "湖泊", "cols": 8, "desc": "湖面如镜。",
+    "grid": [
+      {"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},
+      {"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},
+      {"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},
+      {"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},{"object_id":"water"},
+      {"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},
+      {"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},
+      {"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"},
+      {"type":"null"},{"type":"null"},{"type":"null"},{"sn":"南回","acts":[{"label":"往南","cmd":[{"type":"move","target":"forest","entry":3}]}]},{"type":"null"},{"type":"null"},{"type":"null"},{"type":"null"}
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "is_player": true, "sn": "我",
+    "base_stats": {
+      "limbs": { "head": 35, "chest": 75, "stomach": 50, "l_arm": 60, "r_arm": 60, "l_leg": 60, "r_leg": 60 },
+      "maxLimbs": { "head": 35, "chest": 75, "stomach": 50, "l_arm": 60, "r_arm": 60, "l_leg": 60, "r_leg": 60 },
+      "fullness": 100, "hydration": 100, "fatigue": 0, "buffs": []
+    }
+  },
+  "old_man": {
+    "sn": "老者", "fn": "闭目养神的老者", "type": "npc",
+    "event_ids": ["evt_old_man_wisdom"]
+  }
+}
