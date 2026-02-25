@@ -1,0 +1,12 @@
+{
+  "sensations": [
+    { "id": "l_leg_gone", "condition": { "limb": "l_leg", "ratio": 0 }, "text": "你的左腿已经完全变形，只能拖着断肢勉强挪动。" },
+    { "id": "r_leg_gone", "condition": { "limb": "r_leg", "ratio": 0 }, "text": "右腿支离破碎，剧痛让你每次落脚都颤抖不已。" },
+    { "id": "head_trauma", "condition": { "limb": "head", "ratio": 0.4 }, "text": "脑袋像是被重锤击中，视线支离破碎。" },
+    { "id": "starving", "condition": { "stat": "fullness", "val": 15, "op": "lt" }, "text": "饥饿让你的肠胃绞在一起，阵阵发虚。" },
+    { "id": "healthy", "condition": "default", "text": "肢体还算听使唤，只是呼吸略显急促。" }
+  ],
+  "effects": {
+    "well_rested": { "name": "神清气爽", "desc": "充足的睡眠让你感到充满力量。", "onTick": [{ "type": "mod_stat", "key": "stamina", "val": 5 }] }
+  }
+}

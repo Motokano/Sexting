@@ -1,0 +1,11 @@
+{
+  "hero": {
+    "is_player": true, "sn": "我", "fn": "你自己",
+    "base_stats": {
+      "limbs": { "head": 35, "chest": 75, "l_arm": 60, "r_arm": 60, "l_leg": 60, "r_leg": 60, "stomach": 50 },
+      "maxLimbs": { "head": 35, "chest": 75, "l_arm": 60, "r_arm": 60, "l_leg": 60, "r_leg": 60, "stomach": 50 },
+      "stamina": 200, "maxStamina": 200, "energy": 100, "maxEnergy": 100, "qi": 0, "maxQi": 100,
+      "fullness": 100, "hydration": 100, "fatigue": 0, "buffs": []
+    }
+  }
+}
