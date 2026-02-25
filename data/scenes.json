@@ -1,6 +1,6 @@
 {
-  "home": {
-    "name": "温馨小屋", "cols": 8, "desc": "这是你的避风港。",
+"home": {
+    "name": "家", "cols": 8, "desc": "简陋的土坯房。",
     "grid": [
       {"type":"null"}, {"type":"null"}, {"type":"null"}, {"sn":"出门", "acts":[{"label":"去树林", "cmd":[{"type":"move", "target":"forest", "entry": 59}]}]}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"},
       {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"},
@@ -13,16 +13,16 @@
     ]
   },
   "forest": {
-    "name": "幽静树林", "cols": 8, "desc": "枯枝败叶的海洋。",
+    "name": "幽静树林", "cols": 8, "desc": "这里弥漫着草木的气息。",
     "grid": [
-      {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"sn":"去湖北", "acts":[{"label":"前进", "cmd":[{"type":"move", "target":"lake", "entry": 59}]}]}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"},
-      {"type":"tree", "sn":"树"}, {"type":"null"},{"npc_id": "old_man"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"tree", "sn":"树"},
+      {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"sn":"北路", "acts":[{"label":"去湖边", "cmd":[{"type":"move", "target":"lake", "entry": 59}]}]}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"},
+      {"type":"tree", "sn":"树"}, {"type":"null"}, {"npc_id": "old_man"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"tree", "sn":"树"},
       {"type":"tree", "sn":"树"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"tree", "sn":"树"},
       {"type":"tree", "sn":"树"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"tree", "sn":"树"},
       {"type":"tree", "sn":"树"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"object_id": "campfire"}, {"type":"null"}, {"type":"null"}, {"type":"tree", "sn":"树"},
       {"type":"tree", "sn":"树"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"tree", "sn":"树"},
       {"type":"tree", "sn":"树"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"null"}, {"type":"tree", "sn":"树"},
-      {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"sn":"回家", "acts":[{"label":"进屋", "cmd":[{"type":"move", "target":"home", "entry": 3}]}]}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}
+      {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"sn":"南归", "acts":[{"label":"进屋", "cmd":[{"type":"move", "target":"home", "entry": 3}]}]}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}, {"type":"tree", "sn":"树"}
     ]
   },
   "lake": {
